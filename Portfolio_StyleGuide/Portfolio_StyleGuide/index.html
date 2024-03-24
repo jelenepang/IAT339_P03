@@ -26,34 +26,77 @@
       <!-- INTERACTIVE ELEMENTS SECTION // -->
       <section id="interactive_elements">
 
+        <!-- Colors -->
+        <section>
+          <h3>COLORS</h3>
+          <p>The website will follow the collection of natural but vibrant colors shown below which includes a neutral, base champagne color, two secondary colors, and an accent color. <br> Keeping these colors relatively bright help create a youthful and fun look while keeping customers feeling welcomed as they navigate the website. </p>
+
+          <div class="color-grid-container">
+            <div class="moss"> <h4>MOSS <span class='smaller'>#9daa97</span></h4>main color used for buttons and other elements</div>
+            <div class="light-moss"> <h4>LIGHT MOSS <span class='smaller'>#d6ddd3</span></h4>secondary color for lower priority elements and borders</div>
+            <div class="champagne"> <h4>WHITE<span class='smaller'>#ffffff</span></h4>background color acting as base color for the site</div>
+            <div class="red"> <h4>RED <span class='smaller'>#954638</span></h4>accent color for variety and visual heirarchy</div> 
+          </div>
+        </section>
+
         <!-- Default Button styling section -->
         <section>
 
           <h3>DEFAULT BUTTON</h3>
 
-          <h3>CSS selector:</h3>
-          <p>.button-nav</p>
+          <h4>CSS selector:</h4>
+          <p>.default-button</p>
 
-          <h3>Sample code:</h3>
-          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+          <h4>Sample code:</h4>
+          <code>&lt;button class="default-button"&gt;Default Button&lt;/button&gt;</code>
 
-          <h3>Rendered element:</h3>
-          <a class="button" href="#">Default Button</a>
+          <h4>Rendered element:</h4>
+          <button class="default-button">Default Button</button>
 
         </section>
 
         <section>
           <h3>IN-TEXT LINKS</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.link</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a class="link" href="#"&gt;sample link&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="link" href="#">sample link</a>
         </section>
 
         <section>
           <h3>SUBMIT/RESET BUTTONS</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>input[type="submit"], input[type="reset"]</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;input type="submit"&gt;</code><br><br>
+          <code>&lt;input type="reset"&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <input type="submit">
+          <input type="reset">
         </section>
 
         <section>
           <h3>TEXT INPUT FIELD</h3>
-        </section>
+          <h4>CSS selector:</h4>
+          <p>#form-input, label, input </p>
 
+          <h4>Sample code:</h4>
+          <code>&lt;label for="form-input">Message&lt;/label&gt;&lt;br&gt; </code> <br><br>
+          <code>&lt;input id="form-input" type="text" placeholder="Type here"&gt; </code>
+
+          <h4>Rendered element:</h4>
+
+          <label for="form-input">Message</label><br>
+          <input id="form-input" type="text" placeholder="Type here">
+        </section>
       </section>
       <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -63,19 +106,64 @@
       <section id="text_elements">
 
         <section>
-          <h3>HEADINGS</h3>
-        </section>
+          <h3>TYPOGRAPHY</h3>
 
-        <section>
-          <h3>PARAGRAPHS</h3>
+            <p>My portfolio will use LATO, a simple san serif font that is not too distracting nor difficult to read on a screen.</p>
+
+            <div class="type">
+ 
+              <h1 class="sample-type">TITLE <span class='smaller'> LATO BOLD all caps</span></h1>
+              <p>Main titles of each page within the website will be of the largest bolded font size and in all capitals.</p>
+
+              <h3 class="sample-type">HEADINGS <span class='smaller'>  LATO BOLD all caps</span></h3>
+                <p>Headings that help organize sections on a page will be bolded but at a smaller font size than titles and in all capitals.</p>
+
+              <h4 class="sample-type">Subheadings <span class='smaller'>  LATO BOLD regular case</span></h4>
+              <p>Subheadings for categorization within sections will be bolded and in regular case. </p><br>
+
+              <p class="sample-type">Body Text <span class='smaller'> LATO REGULAR normal case <br><br></span> Body text for the majority of text content will be styled regularly and using regular casing.
+              </p>
+            </div>
         </section>
 
         <section>
           <h3>BULLET LISTS</h3>
+          <h4>CSS selector:</h4>
+          <p>ul, li</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ul></code><br><br>
+          <code>&lt;li>sample 1&lt;/li&gt;</code><br><br>
+          <code>&lt;li>sample 2&lt;/li&gt;</code><br><br>
+          <code>&lt;li>sample 3&lt;/li&gt;</code><br><br>
+          <code>&lt;/ul></code><br><br>
+
+
+          <h4>Rendered element:</h4>
+          <ul>
+            <li>sample 1</li>
+            <li>sample 2</li>
+            <li>sample 3</li>
+          </ul>
         </section>
 
         <section>
           <h3>NUMBERED LISTS</h3>
+          <h4>CSS selector:</h4>
+          <p>ol, li</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ol></code><br><br>
+          <code>&lt;li>sample 1&lt;/li&gt;</code><br><br>
+          <code>&lt;li>sample 2&lt;/li&gt;</code><br><br>
+          <code>&lt;li>sample 3&lt;/li&gt;</code><br><br>
+          <code>&lt;/ol></code><br><br>
+          <h4>Rendered element:</h4>
+          <ol>
+            <li>sample 1</li>
+            <li>sample 2</li>
+            <li>sample 3</li>
+          </oll>
         </section>
 
       </section>
@@ -88,16 +176,11 @@
 
         <section>
           <h3>MAIN NAVIGATION</h3>
-
-          <nav>
-            <img id="nav-logo" src="imgs/logo.png" alt="personal jalene logotype">
-            <div id="nav-bg">
+          <div class="sample-nav">
               <a class="nav-bar-elements" href="#interactive_elements">Interactive Elements</a>
               <a class="nav-bar-elements" href="#text_elements">Text Elements</a>
               <a class="nav-bar-elements" href="#combined_elements">Combined Elements</a>
-            </div>
-          </nav>
-    
+          </div>
         </section>
 
         <!-- <section>

@@ -7,6 +7,7 @@
   --darkGray: #9daa97; 
   --sage: #1c3121;
   --white: #ffffff;
+  --coral: #954638;
 
 }
 body {
@@ -27,6 +28,9 @@ body {
   padding-bottom: 2rem;
   padding-left: 6rem;
   margin-left: 4rem;
+}
+#nav-bg h4{
+  color: var(--coral);
 }
 .nav-bar-elements{
   margin-left: 5rem;
@@ -67,34 +71,60 @@ nav img{
   width: 4rem;
   height: 100%;
 }
-
-h3{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+input[type="submit"]{
+  border: solid .1rem var(--sage);
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--darkGray);
+}
+input[type="submit"]:hover, input[type="submit"]:focus{
+  background-color: white;
+}
+input[type="reset"]{
+  color: var(--coral);
+  border: solid .1rem var(--coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+input[type="reset"]:hover, input[type="reset"]:focus{
+  color: white;
+  border: solid .1rem var(--coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--coral);
 }
 
 section:not([id]) {
   margin-bottom: 1rem;
-  border: solid .1rem var(--darkGray);
-  border-radius: 3rem;
+  /* border: solid .1rem var(--darkGray); */
+  /* border-radius: 3rem; */
   padding: 2rem;
-  /* border-top: 1px solid #333; */
+  border-bottom: .1rem solid var(--gray);
 }
 
 section h3 {
-  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+section h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.color-grid-container h4{
+  margin: 0;
+}
+
 
 section p {
   margin-top: 0;
 }
 
 section code {
-  background-color: #EEE;
+  background-color: var(--gray);
   padding: 0.5em 0.75em;
+  border-radius: .5rem;
 }
-
-
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -115,7 +145,108 @@ section code {
   background-color: #999;
 }
 
+/* Colors */
+.color-grid-container {
+  margin-top: 1rem;
+  display: grid;    
+  column-gap: .5rem;
+  /* https://stackoverflow.com/questions/47601564/equal-width-columns-in-css-grid */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.red, .champagne, .sage, .moss, .light-moss {
+  border-radius: 10rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  text-align: left;
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+.red{
+  background-color: var(--coral);
+}
+.champagne{
+  background-color: var(--champagne);
+  border: var(--darkGray) solid .15rem;
+}
+.moss{
+  background-color: var(--darkGray)
+}
+.light-moss{
+  background-color: var(--gray)
+}
 
+/* Default button */
+.default-button{
+  margin-top: 1rem;
+  border: solid .1rem transparent;
+  border-radius: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--darkGray);
+}
+.default-button:hover, .default-button:focus{
+  background-color: white;
+  border: solid .1rem var(--darkGray);
+}
+
+/* in-text link */
+.link{
+  color: var(--sage);
+}
+.link:hover, .link:focus{
+  color: var(--darkGray);
+}
+/* form input */
+::placeholder {
+  color: var(--coral);
+}
+input{
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  border-style: none;
+  transition-duration: 0.5s;
+  border: .1rem solid var(--coral);
+  margin-top: .5rem;
+  color: black;
+} 
+
+input:hover, input:focus{
+  background-color: var(--gray);
+  border: .1rem solid var(--sage);
+}
+/* typography */
+.type{
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid .1rem var(--darkGray);
+}
+.smaller{
+  font-size: .96rem;
+}
+
+.sample-type {
+  color: black;
+}
+
+.type p {
+  padding-bottom: 1rem;
+  border-bottom: solid tan .1rem;
+}
+/* main navigation */
+.sample-nav{
+  border: solid .1rem var(--darkGray);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.sample-nav .nav-bar-elements{
+  margin-left: 0;
+}
+ul, ol{
+  margin-left: 1rem;
+}
 
 /* 
   TEXT ELEMENTS -------------------
