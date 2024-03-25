@@ -160,7 +160,7 @@ nav img{
     height: 100%;
     object-fit: cover;
 }
-.work-1, .work-2{
+.work-1, .work-2, .work-3{
     overflow: hidden;
 }
 .details{
