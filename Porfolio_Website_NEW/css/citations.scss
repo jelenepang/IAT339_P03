@@ -16,6 +16,7 @@ h4{
 }
 p{
     @include p;
+    padding-left: 1rem;
 }
 span{
     @include span;
@@ -185,4 +186,10 @@ code{
     border-radius: 1rem;
     background-color: #DFD6BE;
     margin-top: 5rem;
+}
+
+section a{
+        text-decoration: underline;
+    font-size: 1rem;
+    padding-left: 0;
 }

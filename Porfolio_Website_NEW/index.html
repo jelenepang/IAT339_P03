@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jalene's Portfolio</title>
 
-    <link href="css/main.css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <script src="js/function.js"></script>
 
   </head>
@@ -21,19 +22,16 @@
         <header>
             <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
             <nav>
-                <ul>
-                    <div id="not-menu">
-                        <li><a href="index.html#about">ABOUT ME</a></li>
-                        <li class="dropdown">
-                            <a class="dropbtn" href="index.html#works">WORKS</a>
-                            <div class="dropdown-content">
-                                <a href="adobook.html">Adobook</a>
-                                <a href="tg100.html">TG100</a>
-                            </div>
-                        </li>
-                        <li><a href="index.html#contact">CONTACT</a></li>
-                    </div>
-
+                <ul class="not-menu">
+                    <li><a href="index.html#about">ABOUT ME</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn" href="index.html#works">WORKS</a>
+                        <div class="dropdown-content">
+                            <a href="adobook.html">Adobook</a>
+                            <a href="tg100.html">TG100</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
                 <!-- hidden menu -->
                     <li id="menu" class="dropdown">
                         <a class="dropbtn">MENU</a>
@@ -145,11 +143,12 @@
                 <div id="footer-logo">
                     <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
                 </div>
-                <div id="footer-links">
+                <ul id="footer-links">
                     <li><a href="https://github.com/jelenepang/IAT339_P03">GIT REPO</a></li>
                     <li><a href="style.html">STYLE GUIDE</a></li>
+                    <li><a href="citations.html">CITATIONS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                </div>
+                </ul>
             </div>
         </footer>
     <script src="js/main.js"></script>

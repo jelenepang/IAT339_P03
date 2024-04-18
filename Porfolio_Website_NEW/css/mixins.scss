@@ -150,25 +150,6 @@ $yellow: #FFB525;
         }
     }
 }
-//scroll bar
-// ::-webkit-scrollbar {
-//   display:none;
-// }
-
-//cursor
-//https://www.youtube.com/watch?v=NqiElKcXZsw&ab_channel=OnlineTutorials
-// .cursor{
-//     position: fixed;
-//     width: 20px;
-//     height: 20px;
-//     background-color: #262341;
-//     border-radius: 50%;
-//     transform: translate(-50%, -50%);
-//     display: none;
-//     &:hover{
-//         display: normal;
-//     }
-// }
 
 /////for project pages
 @mixin intro{
@@ -204,8 +185,8 @@ $yellow: #FFB525;
     display: none;
 }
 
-@mixin nav-footer-media-query{
-    #not-menu {
+@mixin nav-media-query{
+    .not-menu li:not(#menu) {
         display: none;
     }
     #menu{
@@ -227,6 +208,8 @@ $yellow: #FFB525;
     #landing{
         margin-bottom: 8rem;
     }
+}
+@mixin footer-media-query{
     #footer-container{
         justify-content: center;
         grid-template-columns: auto;
@@ -245,3 +228,5 @@ $yellow: #FFB525;
         }
     }
 }
+
+

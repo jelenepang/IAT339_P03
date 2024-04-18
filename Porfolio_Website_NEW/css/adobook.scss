@@ -158,7 +158,9 @@ div.scroll-container img {
     padding-bottom: 6rem;
 }
 
-
+@media screen and (max-width: 1330px) {
+    @include footer-media-query;
+}
 @media screen and (max-width: 1290px) {
     .intro p{
         width: 70%;
@@ -176,7 +178,7 @@ div.scroll-container img {
     }
 }
 @media screen and (max-width: 945px) {
-    @include nav-footer-media-query;
+    @include nav-media-query;
     div.scroll-container img {
         height: 20rem;
     }
