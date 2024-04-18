@@ -8,30 +8,35 @@
 
     <link href="css/adobook.css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link class="inter-baseFont" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> -->
-    
-
   </head>
   <body>
     <header>
         <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html#about">ABOUT ME</a></li>
-                <li class="dropdown">
-                    <a class="dropbtn" href="index.html#works">WORKS</a>
+            <nav>
+                <ul>
+                    <div id="not-menu">
+                        <li><a href="index.html#about">ABOUT ME</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="index.html#works">WORKS</a>
+                            <div class="dropdown-content">
+                                <a href="tg100.html">TG100</a>
+                                <a href="adobook.html">Adobook</a>
+                            </div>
+                        </li>
+                        <li><a href="index.html#contact">CONTACT</a></li>
+                    </div>
+
+                <!-- hidden menu -->
+                    <li id="menu" class="dropdown">
+                        <a class="dropbtn">MENU</a>
                         <div class="dropdown-content">
-                            <a href="tg100.html">TG100</a>
-                            <a href="adobook.html">Adobook</a>
+                            <a href="index.html#about">ABOUT</a>
+                            <a href="index.html#works">WORKS</a>
+                            <a href="index.html#contact">CONTACT</a>
                         </div>
-                </li>
-                <li><a href="index.html#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <section class="intro">
         <h3>DIGITAL RECIPE BOOK</h3>
@@ -40,7 +45,7 @@
         <p>Adobook, designed during a Spring 2023 Interface Design course, is a collaborative effort among three <span>UI/UX</span> team members, including myself. This interactive system hopes to keep Filipino traditions alive and preserve culture through food and community. Later designed as a mobile app, Adobook serves as a convenient database for users to store, access, and share their favorite recipes with family.</p>
         
     </section>
-    <section id="adobo-gallery">
+    <section id="gallery">
     <div class="cursor"></div>
         <div class="scroll-container">
             <img src="img/adobook/splash.png" alt="adobook app splash screen screenshot">
@@ -87,7 +92,7 @@
             <div>
                 <h3>01 CHALLENGE</h3>
                 <p>While the overall progress remained steady, there were hurdles that highlighted the necessity of aligning Adobook more closely with its intended users. The app was developed with a focus on features like recipe addition and data collection. However, during an in-class critique sessions, feedback showed that this manual approach to data entry did not cater well to the app's target users. Given that it's demographic includes seniors who may rely solely on hard copy recipes, Adobook needed to offer a more user-friendly solution for recipe entry.</p>
-                <h3>01 SOLUTION</h3>
+                <h3>SOLUTION</h3>
                 <p>To address this challenge, I proposed a feature enabling image scanning. This function would convert images into text, alleviating the need for manual data entry and thereby easing the usability for our target audience. Additonally, I suggested that the app should support audio recordings to further improve accessiblity.</p>
             </div>       
         </div>
@@ -114,7 +119,7 @@
                 </div>
             </div>
              <div>
-                <h3>02 SOLUTION</h3>
+                <h3>SOLUTION</h3>
                 <p>To address this challenge, I proposed a feature enabling image scanning. This function would convert images into text, alleviating the need for manual data entry and thereby easing the usability for our target audience. Additonally, I suggested that the app should support audio recordings to further improve accessiblity.</p>
             </div>
             <div class="three-img">

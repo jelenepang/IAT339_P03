@@ -59,10 +59,10 @@ header {
 //landing
 #hero img{
   z-index: -199;
-  width: 60vw;
+  width: 56vw;
   opacity: 90%;
-  margin-left: -10vw;
-  margin-top: -3vw;
+  margin-left: -14vw;
+  margin-top: -4vw;
   position: absolute;
 }
 #landing{
@@ -116,7 +116,7 @@ header {
 }
 #pie-container{
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     width: inherit;
     margin-top: 4rem;
     margin-bottom: 0;
@@ -140,7 +140,7 @@ header {
     scroll-margin-top: 5rem;
     border-top: $darkBlue .1rem dashed;
     padding-top: 6rem;
-    margin-top: 12rem;
+    margin-top: 8rem;
 }
 #works-container{
     margin-top: 8rem;
@@ -167,7 +167,7 @@ header {
     column-gap: 3rem;
 }
 input{
-    width: 50%;
+    width: 70%;
     padding: 1rem;
     border-radius: 2rem;
     border: solid $darkBlue .1rem;
@@ -287,4 +287,89 @@ footer{
     img{
         width: 2rem;
     }
+}
+
+
+@media screen and (max-width: 1450px) {
+    #landing-content{
+        margin-left: 60%;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #about{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 1250px) {
+    #hero img{
+        margin-top: 10%;
+    }
+
+}
+@media screen and (max-width: 945px) {
+    @include nav-footer-media-query;
+}
+@media screen and (max-width: 850px) {
+    #landing-content{
+        margin-left: 30%;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #hero img{
+        width: 80%;
+        margin-left: -55vw;
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 800px) {
+       #footer-container{
+        #footer-logo{
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #footer-links{
+            li{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    #landing-content{
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #pie-container{
+        grid-template-columns: auto auto;
+        margin-top: 2rem;
+        .pies{
+            margin-bottom: 2rem;
+
+        }
+    }
+    #landing{
+        margin-bottom: 4rem;
+    }
+    #hero img{
+        display: none;
+    }
+
+    #contact-container{
+        display: block;
+    }
+    #talk-container h1{
+        text-align: left;
+        float: left;
+        margin-bottom: 3rem;
+    }
+    #social-media-icons{
+        display: none;
+    }
+    input{
+        width: 100%;
+    }
+
 }

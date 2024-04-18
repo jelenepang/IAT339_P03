@@ -86,10 +86,6 @@ footer{
 .intro{
     @include intro;
 }
-#gallery{
-    border-bottom: dashed $darkBlue .1rem;
-    padding-bottom: 10rem;
-}
 //intro gallery
 div.scroll-container {
   overflow: auto;
@@ -178,9 +174,68 @@ div.scroll-container img {
 .conclusion{
     padding-bottom: 6rem;
 }
-// .gallery{
-//     @include gallery;
-//     img{
-//         width: 100%;
-//     }
-// }
+
+
+@media screen and (max-width: 1290px) {
+    .intro p{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .process1{
+        display: block;
+    }
+    .challenge1{
+        display: block;
+        img{
+            margin-bottom: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 945px) {
+    @include nav-footer-media-query;
+    div.scroll-container img {
+        height: 20rem;
+    }
+    .intro{
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+       #footer-container{
+        #footer-logo{
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #footer-links{
+            text-align: center;
+            li{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .intro p{
+        width: 90%;
+    }
+    #pie-container {
+        grid-template-columns: auto auto;
+    }
+    .three-img{
+        display: block;
+    }
+    .challenge2 .three-img img {
+        border: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .intro p{
+        width: 100%;
+    }
+}
+

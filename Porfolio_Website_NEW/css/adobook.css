@@ -14,6 +14,10 @@
   background: #b30000;
 }
 
+#menu {
+  display: none;
+}
+
 body {
   background-color: #FFFCF0;
   font-family: "Inter", sans-serif;
@@ -178,11 +182,6 @@ footer {
   width: 50%;
 }
 
-#gallery {
-  border-bottom: dashed #262341 0.1rem;
-  padding-bottom: 10rem;
-}
-
 div.scroll-container {
   overflow: auto;
   white-space: nowrap;
@@ -298,4 +297,103 @@ div.scroll-container img {
 
 .conclusion {
   padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .intro p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .process1 {
+    display: block;
+  }
+  .challenge1 {
+    display: block;
+  }
+  .challenge1 img {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 945px) {
+  #not-menu {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .dropbtn img {
+    margin: 0;
+    width: 2rem;
+    height: auto;
+    vertical-align: middle;
+  }
+  .dropdown-content a {
+    background-color: #FFFCF0;
+  }
+  #about {
+    width: 100%;
+  }
+  #landing {
+    margin-bottom: 8rem;
+  }
+  #footer-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  #footer-container #footer-logo {
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #footer-container #footer-links {
+    text-align: center;
+  }
+  #footer-container #footer-links li {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  div.scroll-container img {
+    height: 20rem;
+  }
+  .intro {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  #footer-container #footer-logo {
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #footer-container #footer-links {
+    text-align: center;
+  }
+  #footer-container #footer-links li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .intro p {
+    width: 90%;
+  }
+  #pie-container {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+  .three-img {
+    display: block;
+  }
+  .challenge2 .three-img img {
+    border: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro p {
+    width: 100%;
+  }
 }
