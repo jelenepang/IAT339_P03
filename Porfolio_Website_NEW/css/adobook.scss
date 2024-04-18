@@ -66,23 +66,6 @@ footer{
     @include footer-container;
 }
 
-// //scrollbar
-// ::-webkit-scrollbar-track {
-//   border-radius: 10px;
-// }
- 
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: red; 
-//   border-radius: 10px;
-// }
-
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//   background: #b30000; 
-// }
-
-//////////////////
 .intro{
     @include intro;
 }
@@ -211,7 +194,6 @@ div.scroll-container img {
         }
 
         #footer-links{
-            text-align: center;
             li{
                 margin-top: 1rem;
                 margin-bottom: 1rem;
